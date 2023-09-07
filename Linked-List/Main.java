@@ -26,9 +26,11 @@ public class Main{
 
 //		System.out.println(linkedList.insert(4,5));
 
-		System.out.println(linkedList.insert(2, 45));
+//		System.out.println(linkedList.insert(2, 45));
 			
 //		System.out.println(linkedList.get(2).value);
+
+		linkedList.reverse();
 		System.out.println("_______________________________");
 		
 		linkedList.getLength();
