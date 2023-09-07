@@ -22,12 +22,14 @@ public class Main{
 //		System.out.println(linkedList.removeFirst().value);    //remove head node i.e.,  First Node
 //		System.out.println(linkedList.removeFirst().value);
 
-		System.out.println(linkedList.set(2,5));
+//		System.out.println(linkedList.set(2,5));
+
+		System.out.println(linkedList.insert(4,5));
 			
 //		System.out.println(linkedList.get(2).value);
 		System.out.println("_______________________________");
 		
-//		linkedList.getLength();
+		linkedList.getLength();
 		
 		linkedList.printList();
 	}
