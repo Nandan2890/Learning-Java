@@ -157,6 +157,17 @@ public class LinkedList{
 		}
 	}
 	
+	public Node findMiddleNode(){
+		Node fast_ptr = head;
+		Node slow_ptr = head;
+		
+		while(fast_ptr != null && fast_ptr.next != null){
+			fast_ptr = fast_ptr.next.next;
+			slow_ptr = slow_ptr.next;
+		}
+		return slow_ptr;
+	}
+	
 	public void printList(){
 		Node temp = head;
 		while(temp != null){
@@ -184,5 +195,5 @@ public class LinkedList{
 	public void getLength(){
 		System.out.println("Length: " + length);
 	}
-	
+
 }

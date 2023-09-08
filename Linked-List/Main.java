@@ -30,7 +30,9 @@ public class Main{
 			
 //		System.out.println(linkedList.get(2).value);
 
-		linkedList.reverse();
+//		linkedList.reverse();
+
+		System.out.println(linkedList.findMiddleNode().value);
 		System.out.println("_______________________________");
 		
 		linkedList.getLength();
