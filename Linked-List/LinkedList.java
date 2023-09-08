@@ -171,6 +171,30 @@ public class LinkedList{
 		return slow_ptr;
 	}
 	
+	public boolean hasLoop(){
+		Node fast_ptr = head;
+		Node slow_ptr = head;
+		
+		while(fast_ptr != null && fast_ptr.next != null){
+			fast_ptr = fast_ptr.next.next;
+			slow_ptr = slow_ptr.next;
+			
+			if(fast_ptr == slow_ptr){
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	public void createLoop(){
+		Node temp = head;
+		
+		while(temp.next != null){
+			temp = temp.next;
+		}
+		temp.next = head;
+	}
+	
 	public void printList(){
 		Node temp = head;
 		while(temp != null){
