@@ -157,6 +157,9 @@ public class LinkedList{
 		}
 	}
 	
+	//findMiddleNode():- find middle element in the list using fast and slow technique(Floyd's tortoise and hare algorithm)
+    //in which second pointer move twice from pointer first;
+    //the first pointer is slow pointer and the second pointer is fast pointer
 	public Node findMiddleNode(){
 		Node fast_ptr = head;
 		Node slow_ptr = head;
