@@ -33,8 +33,13 @@ public class Main{
 //		linkedList.reverse();
 
 //		System.out.println(linkedList.findMiddleNode().value);
-		linkedList.createLoop();
-		System.out.println(linkedList.hasLoop());
+//		linkedList.createLoop();
+//		System.out.println(linkedList.hasLoop());
+
+//		System.out.println(linkedList.findkthFromEnd(2));
+
+		linkedList.partitionList(2);
+		linkedList.printList();
 		System.out.println("_______________________________");
 		
 		linkedList.getLength();
