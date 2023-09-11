@@ -4,6 +4,9 @@ public class Main{
 		
 		dll.append(6);
 		dll.append(8);
+		dll.append(9);
+		dll.append(10);
+		dll.append(11);
 		
 		dll.getHead();
 		dll.getTail();
@@ -24,7 +27,9 @@ public class Main{
 		//System.out.println(dll.get(2).value);
 		//System.out.println(dll.set(3, 10));
 		
-		System.out.println(dll.insert(1,10));
+		//system.out.println(dll.insert(1,10));
+		
+		System.out.println(dll.remove(1).value);
 		
 		System.out.println("_____________________________");
 		dll.getHead();
