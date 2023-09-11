@@ -22,6 +22,7 @@ public class Main{
 		//System.out.println(dll.removeFirst().value);
 		
 		System.out.println(dll.get(2).value);
+		System.out.println(dll.set(3, 10));
 		
 		System.out.println("_____________________________");
 		dll.getHead();
