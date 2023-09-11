@@ -18,8 +18,10 @@ public class Main{
 		//dll.prepend(9);
 		//dll.prepend(10);
 		
-		System.out.println(dll.removeFirst().value);
-		System.out.println(dll.removeFirst().value);
+		//System.out.println(dll.removeFirst().value);
+		//System.out.println(dll.removeFirst().value);
+		
+		System.out.println(dll.get(2).value);
 		
 		System.out.println("_____________________________");
 		dll.getHead();
