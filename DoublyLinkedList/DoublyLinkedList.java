@@ -200,6 +200,95 @@ public class DoublyLinkedList{
 		return temp;
 	}
 	
+	public void swapFirstLast(){
+		
+		Node temp1 = head;
+		Node temp2 = tail;
+		
+		if(length >= 2){
+			temp1.prev = temp2.prev;
+			temp2.prev.next = temp1;
+			
+			temp2.next = head.next;
+			head.next.prev = temp2;
+			
+			head = temp2;
+			tail = temp1;
+			
+			head.prev = null;
+			tail.next = null;
+		}else{
+			System.out.println("Length should be greater than or equal to 2");
+		}
+	}
+	
+	public void reverse(){
+		Node current = head;
+		Node temp = null;
+		while(current != null){
+			temp = current.prev;
+			current.prev = current.next;
+			current.next = temp;
+			current = current.prev;
+		}
+		
+		temp = head;
+		head = tail;
+		tail = temp;
+	}
+	
+	public boolean isPalindrome(){
+		if(length <= 0){
+			return true;
+		}
+		
+		Node right = tail;
+		Node left = head;
+		
+		for(int i = 0; i < length/2; i++){
+			if(left.value != right.value)
+				return false;
+			
+			left = left.next;
+			right = right.prev;
+		}
+		
+		return true;
+	}
+	
+	public void swapPairs(){
+		Node dummy = new Node(0);
+		dummy.next = head;
+		Node previous = dummy;
+		
+		while(head != null && head.next != null){
+			//identify nodes to swao
+			Node first = head;
+			Node second = head.next;
+			
+			//update pinters to swap nodes
+			previous.next = second;
+			first.next = second.next;
+			second.next = first;
+			
+			//update previous pointers
+			second.prev = previous;
+			first.prev = second;
+			
+			if(first.next != null){
+				first.next.prev = first;
+			}
+			
+			//move pointers for the next iteration and update list head
+			head = first.next;
+			previous = first;
+		}
+		head = dummy.next;
+		if(head != null){
+		    head.prev = null;
+		}
+	}
+	
 	public void printList(){
 		Node temp = head;
 		while(temp != null){

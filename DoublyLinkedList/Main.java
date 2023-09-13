@@ -1,12 +1,12 @@
 public class Main{
 	public static void main(String[] args){
-		DoublyLinkedList dll = new DoublyLinkedList(7);
+		DoublyLinkedList dll = new DoublyLinkedList(1);
 		
+		dll.append(2);
+		dll.append(3);
+		dll.append(4);
+		dll.append(5);
 		dll.append(6);
-		dll.append(8);
-		dll.append(9);
-		dll.append(10);
-		dll.append(11);
 		
 		dll.getHead();
 		dll.getTail();
@@ -29,7 +29,14 @@ public class Main{
 		
 		//system.out.println(dll.insert(1,10));
 		
-		System.out.println(dll.remove(1).value);
+		//System.out.println(dll.remove(1).value);
+		
+		//dll.swapFirstLast();
+		
+		//dll.reverse();
+		
+		//System.out.println(dll.isPalindrome());
+		dll.swapPairs();
 		
 		System.out.println("_____________________________");
 		dll.getHead();
