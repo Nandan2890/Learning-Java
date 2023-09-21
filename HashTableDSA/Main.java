@@ -9,8 +9,12 @@ public class Main {
         hashTable.set("bolts", 200);
         hashTable.set("screws", 140);
 
-        System.out.println(hashTable.get("bolts"));
+        
+        System.out.println(hashTable.keys());
+        System.out.println(hashTable.values());
 
-        hashTable.printTable();
+        // System.out.println(hashTable.get("bolts"));
+
+        // hashTable.printTable();
     }
 }
